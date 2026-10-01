@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Un minuteur Pomodoro simple, sans compte et sans dépendance.">
+    <title>Focus Timer</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <main class="timer" aria-labelledby="page-title">
+      <header>
+        <p class="brand">Focus Timer</p>
+        <p class="sessions"><strong id="sessions-count">0</strong> session terminée aujourd'hui</p>
+      </header>
+
+      <section class="clock">
+        <div class="modes" aria-label="Type de session">
+          <button class="mode active" data-mode="focus" type="button">Concentration</button>
+          <button class="mode" data-mode="break" type="button">Pause</button>
+        </div>
+
+        <h1 id="page-title">Une chose à la fois.</h1>
+        <time id="time" datetime="PT25M" aria-live="off">25:00</time>
+        <progress id="progress" max="1500" value="0" aria-label="Progression de la session"></progress>
+
+        <div class="controls">
+          <button id="toggle" class="primary" type="button">Démarrer</button>
+          <button id="reset" class="secondary" type="button">Recommencer</button>
+        </div>
+
+        <p id="status" class="status" aria-live="polite">Prêt pour une session de 25 minutes.</p>
+      </section>
+
+      <footer>
+        <span>Espace : démarrer / pause</span>
+        <span>R : recommencer</span>
+      </footer>
+    </main>
+  </body>
+</html>
