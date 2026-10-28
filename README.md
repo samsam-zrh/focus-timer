@@ -1,32 +1,17 @@
 # Focus Timer
 
-Un minuteur Pomodoro simple pour alterner une session de concentration et une petite pause.
+J’ai fait ce minuteur pour travailler par sessions de 25 minutes, avec des pauses de 5 minutes. Il tourne dans le navigateur, en HTML, CSS et JavaScript.
 
-Le projet utilise seulement **HTML, CSS et JavaScript**. Il fonctionne directement dans le navigateur, sans installation et sans compte.
+## Utilisation
 
-## Fonctionnalités
+Ouvrir `index.html`, ou lancer :
 
-- session de concentration de 25 minutes ;
-- pause de 5 minutes ;
-- démarrer, mettre en pause et recommencer ;
-- compteur de sessions terminées aujourd'hui ;
-- sauvegarde du compteur dans le navigateur ;
-- raccourcis clavier : `Espace` pour démarrer ou mettre en pause, `R` pour recommencer.
-
-## Lancer le projet
-
-Ouvrir directement `index.html`, ou utiliser un petit serveur local :
-
-```bash
+```sh
 python3 -m http.server 8000
 ```
 
-Puis ouvrir [http://localhost:8000](http://localhost:8000).
+Puis ouvrir <http://localhost:8000>.
 
-## Ce que j'ai pratiqué
+`Espace` démarre ou met en pause, `R` remet le minuteur au début. Le compteur de sessions est conservé dans le navigateur.
 
-La manipulation du DOM, `setInterval`, la sauvegarde avec `localStorage`, les états d'une petite interface et quelques bases d'accessibilité.
-
-## Limites actuelles
-
-Les durées sont fixes et il n'y a pas encore de son à la fin d'une session. Je préfère garder une base courte avant d'ajouter des réglages.
+Les durées sont fixes et il n’y a pas d’alerte sonore pour le moment.
